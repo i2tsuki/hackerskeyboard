@@ -24,7 +24,7 @@
     android:horizontalGap="0px"
     android:verticalGap="0px"
     android:verticalPad="@dimen/key_vertical_pad_compact"
-    android:layoutRows="5"
+    android:layoutRows="2"
     android:layoutColumns="11"
 >
     <Row>
