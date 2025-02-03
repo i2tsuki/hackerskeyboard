@@ -56,6 +56,8 @@ public class LatinKeyboardView extends LatinKeyboardBaseView {
 	// The following keycodes match (negative) KeyEvent keycodes.
     // Would be better to use the real KeyEvent values, but many
     // don't exist prior to the Honeycomb API (level 11).
+    static final int KEYCODE_Z = 122;
+    static final int KEYCODE_UNDO = 131;
     static final int KEYCODE_DPAD_UP = -19;
     static final int KEYCODE_DPAD_DOWN = -20;
     static final int KEYCODE_DPAD_LEFT = -21;

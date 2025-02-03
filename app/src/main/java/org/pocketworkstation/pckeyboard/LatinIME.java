@@ -2057,6 +2057,15 @@ public class LatinIME extends InputMethodService implements
             // send as plain keys, or as escape sequence if needed
             sendSpecialKey(-primaryCode);
             break;
+        case LatinKeyboardView.KEYCODE_UNDO:
+            // Ctrl-Z for undo
+            setModCtrl(!mModCtrl);
+            // mCtrlKeyState.onPress();
+            // sendCtrlKey(ic, true, true);
+            // if (processMultiKey(primaryCode)) {
+            //     break;
+            // }
+            primaryCode = LatinKeyboardView.KEYCODE_Z;
         default:
             if (!mComposeMode && mDeadKeysActive && Character.getType(primaryCode) == Character.NON_SPACING_MARK) {
                 //Log.i(TAG, "possible dead character: " + primaryCode);
